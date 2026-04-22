@@ -3,14 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WINDBREAKERS</title>
-    <big><big></big><big><big></big><big><big></big><big><big><h1 style="color: rgb(92, 46, 199);">WINDBREAKERS</h1></big></big></big></big><big><big></big><big><big></big>
+    <title>WINDBREAKERS - T Collections</title>
+    <style>
+        body {
+            background-color: rgb(209, 204, 204);
+            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            color: rgb(92, 46, 199);
+            font-size: 3rem;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .price-tag {
+            color: crimson;
+            font-weight: bold;
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+        }
+
+        .instruction {
+            color: blueviolet;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+
+        /* Button Container */
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            width: 100%;
+            max-width: 320px;
+            padding: 18px;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            text-decoration: none;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s, opacity 0.2s;
+        }
+
+        .btn-whatsapp { background-color: #25D366; }
+        .btn-email { background-color: blueviolet; }
+
+        .btn:hover { opacity: 0.9; transform: scale(1.02); }
+
+        /* Product Image */
+        .product-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            border: 5px solid white;
+        }
+    </style>
 </head>
-<body style="background-color: rgb(209, 204, 204);">
-     <P style="color: crimson;">EACH WINDBREAKER IS GOING AT K550 ,PREORDERS ONLY.</P>
-     <p style="color: blueviolet;">Once you have chosen an item,click the link to purchase the product from the supplier.</p>
-     <a href="https://wa.me/qr/QQAG6XSQE3UVB1"><button style="background-color:blueviolet;"><big><big><big>CONTACT SUPPLIER</big></big></big></button></a>
-     <br>
-     <img src="WINDBREAKERS.jpg">
+<body>
+
+    <h1>WINDBREAKERS</h1>
+
+    <p class="price-tag">EACH WINDBREAKER IS GOING AT K550, PREORDERS ONLY.</p>
+    
+    <p class="instruction">
+        Once you have chosen an item, use the buttons below to purchase from the supplier.
+    </p>
+
+    <div class="btn-group">
+        <a href="https://wa.me/qr/QQAG6XSQE3UVB1?text=Hello!%20I%20am%20interested%20in%20ordering%20a%20Windbreaker." 
+           class="btn btn-whatsapp">
+           WHATSAPP SUPPLIER
+        </a>
+
+        <a href="mailto:kachesajoshua11@gmail.com?subject=Windbreaker%20Inquiry&body=Hello,%20I'm%20interested%20in%20the%20Windbreakers." 
+           class="btn btn-email">
+           EMAIL SUPPLIER
+        </a>
+    </div>
+
+    <img src="WINDBREAKERS.jpg" alt="Windbreaker Collection" class="product-img">
+
 </body>
 </html>
