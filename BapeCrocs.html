@@ -10,88 +10,95 @@
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
     <style>
-        /* General page styles */
         body {
-            background-color: black;
+            /* COOL BACKGROUND: Dark Gray with a subtle Purple Grid */
+            background-color: #0a0a0a;
+            background-image: 
+                linear-gradient(rgba(92, 46, 199, 0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(92, 46, 199, 0.1) 1px, transparent 1px);
+            background-size: 30px 30px; /* Size of the grid squares */
+            
             color: white; 
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             text-align: center;
-            padding: 20px;
+            padding: 40px 20px;
+            margin: 0;
         }
 
-        /* Minecraft Style Title */
         h1 {
             font-family: 'Press Start 2P', cursive;
-            color: rgb(92, 46, 199);
-            /* Sized smaller because pixel fonts are naturally bulky */
-            font-size: clamp(1.2rem, 5vw, 2rem); 
+            color: rgb(150, 100, 255); /* Lighter purple to glow */
+            font-size: clamp(1.2rem, 5vw, 2.5rem); 
             line-height: 1.6;
             margin-bottom: 20px;
-            text-shadow: 4px 4px 0px rgba(255, 255, 255, 0.1);
+            /* Glow effect */
+            text-shadow: 0 0 10px rgba(138, 43, 226, 0.8);
         }
 
-        /* Pricing text */
         .price {
-            color: crimson;
+            color: #ff2e5f;
             font-weight: bold;
-            font-size: 1.2rem;
-            margin-bottom: 10px;
+            font-size: 1.4rem;
+            background: rgba(0, 0, 0, 0.6);
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 4px;
+            border: 1px solid crimson;
         }
 
-        /* Instructions */
         .instruction {
-            color: blueviolet;
+            color: #b388ff;
+            margin-top: 20px;
             margin-bottom: 30px;
+            font-size: 1rem;
         }
 
-        /* Blocky Minecraft-style button */
         .contact-btn {
-            background-color: blueviolet;
+            background-color: #6200ea;
             color: white;
             border: none;
-            /* Border-bottom creates a "3D block" effect */
-            border-bottom: 5px solid #4a1d8a; 
-            padding: 15px 30px;
+            border-bottom: 5px solid #310075; 
+            padding: 20px 40px;
             font-size: 1.2rem;
             font-weight: bold;
-            border-radius: 4px; /* Square edges */
+            border-radius: 4px;
             cursor: pointer;
             text-transform: uppercase;
             transition: all 0.1s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
         }
 
         .contact-btn:hover {
-            background-color: #7a32cc;
+            background-color: #7c4dff;
+            transform: translateY(-2px);
         }
 
         .contact-btn:active {
             transform: translateY(3px);
-            border-bottom: 2px solid #4a1d8a;
+            border-bottom: 2px solid #310075;
         }
 
-        /* Image styling */
         img {
             max-width: 100%;
             height: auto;
-            margin-top: 30px;
-            border: 4px solid #333; /* Thicker border for a blocky feel */
-            border-radius: 8px;
+            margin-top: 40px;
+            border: 6px solid #1a1a1a;
+            border-radius: 12px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.8);
         }
 
-        a {
-            text-decoration: none; 
-        }
+        a { text-decoration: none; }
     </style>
 </head>
 <body>
 
-    <h1>BAPECROCS</h1>
+    <h1>BAPE CROCS</h1>
 
-    <p class="price">EACH PAIR IS GOING AT K220 FOR A PRE ORDER AND K550 AT RETAIL</p>
+    <p class="price">K220 PRE-ORDER | K550 RETAIL</p>
     
-    <p class="instruction">Once you have chosen a pair, click the link below to purchase the product from the supplier.</p>
+    <p class="instruction">Select your style and hit the button below to message us.</p>
     
-    <a href="https://wa.me/qr/QQAG6XSQE3UVB1?text=Hello!%20I%20am%20interested%20in%20ordering%20a%20pair%20of%20Bape%20Crocs.">
+    <a href="https://wa.me/qr/QQAG6XSQE3UVB1?text=Hello!%20I%20want%20to%20buy%20Bape%20Crocs.">
         <button class="contact-btn">CONTACT SUPPLIER</button>
     </a>
 
