@@ -1,24 +1,91 @@
-<!DOCTYPE html lan="eng">
-<html>
-    <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>T COLLECTIONS</title>
-       
-        <big><big></big><big><big></big><big><big></big><big><big><h1 style="color: rgb(92, 46, 199);"></h1></big></big></big></big><big><big></big><big><big></big>
-         <img src="logo.jpg" height="200" width="200" alt="Logo">
-      </head>
-    <body style="background: url(./photo2.jpg);" style="background-color: rgb(0, 5, 5);" >
-       <p><h1 style="color: azure;">WELCOME</h1></p>
-       <p style="color: azure;">Items on this website are available for both Pre order and Direct purchase.</p>
-    <a href="croc.html" title="Takes you to crocs section"><button style="background-color: blueviolet;">CROCS</button></a><br>
-    <a href="windbreaker.html" title="Takes you to crocs section"><button style="background-color: blueviolet;">WINDBREAKERS</button></a><br>
-    <a href="BapeCrocs.html" title="Takes you to crocs section"><button style="background-color: blueviolet;">BAPE CROCS</button></a><br>
-    <a href="tracksuits.html" title="Takes you to crocs section"><button style="background-color: blueviolet;">TRACKSUITS</button></a>
+    <title>T COLLECTIONS</title>
+    <style>
+        body {
+            /* Background image + fallback color */
+            background: url('./photo2.jpg') no-repeat center center fixed;
+            background-size: cover;
+            background-color: #000505;
+            
+            color: azure;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            text-align: center;
+            padding: 50px 20px;
+        }
 
+        .logo {
+            border-radius: 50%; /* Makes logo circular if square */
+            margin-bottom: 20px;
+            border: 2px solid blueviolet;
+        }
 
-       <br>
-       <small><small><small><a title="This will open your Email" href="mailto:kachesajoshua11@gmail.com">Email Us</a></small></small></small>
-    </body>
-    <!--reminder-->
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+        }
+
+        /* Nav Button Styling */
+        .nav-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .nav-btn {
+            background-color: blueviolet;
+            color: white;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            max-width: 250px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: transform 0.2s, background-color 0.2s;
+            cursor: pointer;
+        }
+
+        .nav-btn:hover {
+            background-color: #7a32cc;
+            transform: scale(1.05);
+        }
+
+        .footer-link {
+            margin-top: 50px;
+            display: block;
+            color: azure;
+            text-decoration: none;
+            font-size: 0.8rem;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="logo.jpg" height="150" width="150" alt="T Collections Logo" class="logo">
+    
+    <h1>WELCOME</h1>
+    
+    <p class="subtitle">Items on this website are available for both Pre-order and Direct purchase.</p>
+
+    <div class="nav-container">
+        <a href="croc.html" class="nav-btn">CROCS</a>
+        <a href="windbreaker.html" class="nav-btn">WINDBREAKERS</a>
+        <a href="BapeCrocs.html" class="nav-btn">BAPE CROCS</a>
+        <a href="tracksuits.html" class="nav-btn">TRACKSUITS</a>
+    </div>
+
+    <a href="mailto:kachesajoshua11@gmail.com" class="footer-link">Email Us: kachesajoshua11@gmail.com</a>
+
+</body>
 </html>
