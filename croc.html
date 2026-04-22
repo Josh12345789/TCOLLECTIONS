@@ -3,35 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CLASSIC CROCS</title>
+    <title>CLASSIC CROCS - T Collections</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Inter:wght@300;600&display=swap" rel="stylesheet">
+
     <style>
         body {
-            background-color: black;
+            /* COOL BACKGROUND: Animated Deep Purple Gradient */
+            background: linear-gradient(125deg, #000000, #1a0033, #000000);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
             color: white;
-            font-family: 'Segoe UI', Arial, sans-serif;
+            font-family: 'Inter', sans-serif;
             text-align: center;
             padding: 40px 20px;
-            line-height: 1.6;
+            margin: 0;
+            min-height: 100vh;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
 
         h1 {
-            color: rgb(92, 46, 199);
-            font-size: clamp(2rem, 10vw, 3.5rem);
-            margin-bottom: 10px;
+            /* THE BEST FONT: Syncopate */
+            font-family: 'Syncopate', sans-serif;
+            font-weight: 700;
+            color: #ffffff;
+            font-size: clamp(1.5rem, 6vw, 3.5rem);
+            letter-spacing: 10px;
             text-transform: uppercase;
+            margin-bottom: 20px;
+            /* Neon Glow Effect */
+            text-shadow: 0 0 15px rgba(138, 43, 226, 0.7);
         }
 
         .price-tag {
-            color: crimson;
-            font-weight: bold;
-            font-size: 1.3rem;
-            margin-bottom: 20px;
+            color: #ff3e3e;
+            font-weight: 600;
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            border: 1px solid #ff3e3e;
+            display: inline-block;
+            padding: 8px 20px;
+            margin-bottom: 30px;
+            background: rgba(255, 62, 62, 0.1);
         }
 
         .description {
-            color: blueviolet;
-            max-width: 500px;
-            margin: 0 auto 30px auto;
+            color: #b388ff;
+            max-width: 600px;
+            margin: 0 auto 40px auto;
+            font-weight: 300;
+            letter-spacing: 1px;
         }
 
         /* Button Styling */
@@ -40,34 +68,62 @@
             flex-direction: column;
             gap: 15px;
             align-items: center;
-            margin-bottom: 40px;
+            margin-bottom: 50px;
         }
 
         .btn {
             display: inline-block;
             width: 100%;
-            max-width: 300px;
-            padding: 18px;
-            border-radius: 8px;
-            font-weight: bold;
-            font-size: 1.1rem;
+            max-width: 320px;
+            padding: 20px;
+            font-family: 'Syncopate', sans-serif;
+            font-weight: 700;
+            font-size: 0.9rem;
             text-decoration: none;
             color: white;
-            transition: transform 0.2s, opacity 0.2s;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.2);
         }
 
-        .btn:active { transform: scale(0.98); }
+        .btn-whatsapp { 
+            background-color: transparent;
+            border-color: #25D366;
+            color: #25D366;
+        }
+        
+        .btn-whatsapp:hover {
+            background-color: #25D366;
+            color: black;
+            box-shadow: 0 0 20px rgba(37, 211, 102, 0.4);
+        }
 
-        .btn-whatsapp { background-color: #25D366; }
-        .btn-email { background-color: blueviolet; }
+        .btn-email { 
+            background-color: transparent;
+            border-color: blueviolet;
+            color: blueviolet;
+        }
+
+        .btn-email:hover {
+            background-color: blueviolet;
+            color: white;
+            box-shadow: 0 0 20px rgba(138, 43, 226, 0.4);
+        }
 
         /* Main Image */
         .product-img {
             max-width: 100%;
             height: auto;
-            border-radius: 15px;
-            box-shadow: 0 0 20px rgba(92, 46, 199, 0.3);
-            border: 1px solid #333;
+            border-radius: 5px;
+            box-shadow: 0 0 30px rgba(0,0,0,0.5);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.5s;
+        }
+
+        .product-img:hover {
+            transform: scale(1.02);
         }
     </style>
 </head>
@@ -75,21 +131,21 @@
 
     <h1>CLASSIC CROCS</h1>
 
-    <p class="price-tag">EACH PAIR IS GOING AT K160 FOR A PRE ORDER AND K280 AT RETAIL</p>
+    <div class="price-tag">K160 PRE-ORDER | K280 RETAIL</div>
     
     <p class="description">
-        Once you have chosen a pair, use the buttons below to reach the supplier directly.
+        Choose your style. Connect with the supplier instantly.
     </p>
 
     <div class="contact-area">
         <a href="https://wa.me/qr/QQAG6XSQE3UVB1?text=Hello!%20I%20am%20interested%20in%20ordering%20a%20pair%20of%20Classic%20Crocs." 
            class="btn btn-whatsapp">
-           WHATSAPP SUPPLIER
+           WHATSAPP
         </a>
 
-        <a href="mailto:your@email.com?subject=Classic%20Crocs%20Order&body=Hello,%20I%20would%20like%20to%20order..." 
+        <a href="mailto:kachesajoshua11@gmail.com?subject=Classic%20Crocs%20Order" 
            class="btn btn-email">
-           EMAIL SUPPLIER
+           EMAIL
         </a>
     </div>
 
