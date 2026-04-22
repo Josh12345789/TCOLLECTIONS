@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WINDBREAKERS - T Collections</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
     <style>
         body {
             background-color: rgb(209, 204, 204);
@@ -14,10 +19,14 @@
         }
 
         h1 {
+            /* Updated font family */
+            font-family: 'Permanent Marker', cursive;
             color: rgb(92, 46, 199);
-            font-size: 3rem;
+            font-size: clamp(2.5rem, 8vw, 4rem);
             margin-bottom: 15px;
             text-transform: uppercase;
+            /* Added a subtle shadow to make the marker effect pop */
+            text-shadow: 2px 2px 0px rgba(255,255,255,0.5);
         }
 
         .price-tag {
@@ -33,7 +42,6 @@
             font-weight: 500;
         }
 
-        /* Button Container */
         .btn-group {
             display: flex;
             flex-direction: column;
@@ -62,7 +70,6 @@
 
         .btn:hover { opacity: 0.9; transform: scale(1.02); }
 
-        /* Product Image */
         .product-img {
             max-width: 100%;
             height: auto;
